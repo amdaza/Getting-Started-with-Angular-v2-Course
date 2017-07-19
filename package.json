@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/amdaza/Getting-Started-with-Angular-v2-Course#readme",
   "devDependencies": {
+    "@types/core-js": "^0.9.42",
+    "@types/jasmine": "^2.5.53",
+    "@types/node": "^8.0.14",
     "concurrently": "^3.5.0",
     "lite-server": "^2.3.0",
     "typescript": "^2.4.1",
