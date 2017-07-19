@@ -4,8 +4,13 @@
   "description": "course can be found in https://scotch.io/courses/getting-started-with-angular-2",
   "main": "index.js",
   "scripts": {
+    "dev": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "lite-server"
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "postinstall": "typings install"
   },
   "repository": {
     "type": "git",
@@ -18,6 +23,7 @@
   },
   "homepage": "https://github.com/amdaza/Getting-Started-with-Angular-v2-Course#readme",
   "devDependencies": {
+    "concurrently": "^3.5.0",
     "lite-server": "^2.3.0",
     "typescript": "^2.4.1",
     "typings": "^2.1.1"
